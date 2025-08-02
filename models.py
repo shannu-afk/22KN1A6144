@@ -1,23 +1,13 @@
 import sqlite3
 from datetime import datetime, timedelta
-
-
 def init_db():
     conn = sqlite3.connect("database.db")
     c = conn.cursor()
     c.execute(
-        """CREATE TABLE IF NOT EXISTS urls (
-                    id INTEGER PRIMARY KEY,
-                    original_url TEXT,
-                    short_code TEXT UNIQUE,
-                    created_at TEXT,
-                    expiry_minutes INTEGER
-                )"""
+        """CREATE TABLE IF NOT EXISTS urls (id INTEGER PRIMARY KEY,original_url TEXT,short_code TEXT UNIQUE,created_at TEXT,expiry_minutes INTEGER)"""
     )
     conn.commit()
     conn.close()
-
-
 def insert_url(original_url, short_code, expiry_minutes):
     conn = sqlite3.connect("database.db")
     c = conn.cursor()
@@ -27,8 +17,6 @@ def insert_url(original_url, short_code, expiry_minutes):
     )
     conn.commit()
     conn.close()
-
-
 def get_url(short_code):
     conn = sqlite3.connect("database.db")
     c = conn.cursor()
