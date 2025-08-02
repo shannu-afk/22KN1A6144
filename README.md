@@ -49,7 +49,7 @@ Example with expiry: 10 min
 curl -X POST -H "Content-Type: application/json" \
 -d "{\"url\":\"https://example.com\",\"expires_in_minutes\":10}" \
 http://127.0.0.1:5000/shorten
-'''
+
 Example without expiry (default 30 min)
 curl -X POST -H "Content-Type: application/json" \
 -d "{\"url\":\"https://example.com\"}" \
