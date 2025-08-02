@@ -1,4 +1,4 @@
-# 🔗 URL Shortener with Expiry Feature ⏳
+#  URL Shortener Microservice
 
 A simple Flask-based URL shortener that allows users to generate short URLs with custom expiration time. If no time is provided, the short URL expires in **30 minutes** by default.
 
