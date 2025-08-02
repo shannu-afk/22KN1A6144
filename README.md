@@ -4,17 +4,17 @@ A simple Flask-based URL shortener that allows users to generate short URLs with
 
 ---
 
-## ✅ Features
+## Features
 
-- 📌 Shortens long URLs to random 6-character keys.
-- 🕒 Expiry support: user can specify expiry time in **minutes**.
-- ⏱️ Default expiry: 30 minutes if not given.
-- 📦 Stores data in a Python dictionary (in-memory).
-- 📤 Easy to deploy and run locally.
+-  Shortens long URLs to random 6-character keys.
+-  Expiry support: user can specify expiry time in **minutes**.
+-  Default expiry: 30 minutes if not given.
+-  Stores data in a Python dictionary (in-memory).
+-  Easy to deploy and run locally.
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 User Request (POST /shorten)
 ⬇
@@ -33,14 +33,14 @@ Redirect via /<short_key> (GET)
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
-### 🔧 Requirements
+###  Requirements
 
 - Python 3.x
 - Flask
 
-### 💻 Install Flask
+###  Install Flask
 
 ```bash
 pip install flask
